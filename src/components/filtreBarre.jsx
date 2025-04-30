@@ -21,7 +21,7 @@ function FilterBar({ filters, setFilters, setPage }) {
       <input
         type="text"
         name="name"
-        placeholder="Search by name"
+        placeholder="Recherche par nom"
         value={filters.name}
         onChange={handleChange}
       />
