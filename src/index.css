@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.favoris-button {
+  background-color: transparent;
+  border: 1px solid red;
+  color: red;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.personnage-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.personnage-card {
+  width: 180px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.personnage-image {
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.heart-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.detail-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.detail-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .personnage-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .personnage-card {
+    width: 90%;
+  }
+
+  .favoris-button {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+}

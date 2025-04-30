@@ -1,0 +1,43 @@
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter-bar input,
+.filter-bar select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 160px;
+}
+
+.clear-button {
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #f0f0f0;
+  border: 1px solid #999;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.clear-button:hover {
+  background-color: #ddd;
+}
+
+@media (max-width: 600px) {
+  .filter-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-bar input,
+  .filter-bar select,
+  .clear-button {
+    width: 90%;
+  }
+}
